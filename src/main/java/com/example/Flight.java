@@ -16,12 +16,8 @@ public class Flight {
         this.passengers = new ArrayList<Passenger>();
     }
 
-    public void bookFlight(Passenger passenger) {
+    public void bookPassenger (Passenger passenger) {
         passengers.add(passenger);
-    }
-
-    public void cancelBooking(Passenger passenger) {
-        passengers.remove(passenger);
     }
 
     public String getFlightNumber() {
