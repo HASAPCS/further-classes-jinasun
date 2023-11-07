@@ -19,6 +19,14 @@ public class ShoppingCart {
         products.remove(product);
     }
 
+    public double totalCost(){
+        double total = 0.0;
+        for (Product product : products){
+            total += product.getPrice();
+        }
+        return total;
+    }
+
     
     // TODO: Implement methods to add a product, remove a product, and calculate the total cost
 }
